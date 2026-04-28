@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-family:"Roboto", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 5rem;
+  background-color: #4988C4;
+}
+products.html {
+  width: 100%
+}
+
+.products-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  align-items: center;
+  width: 100%;
+  height: 4.5rem;
+  color:#1C4D8D;
+  background-color:#0F2854;
+}
+
+.products {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: (20, auto);
+  justify-items: center;
+}
+
+.product-content1,
+.product-content2,
+.product-content3,
+.product-content4,
+.product-content5,
+.product-content6,
+.product-content7,
+.product-content8,
+.product-content9,
+.product-content10,
+.product-content11,
+.product-content12,
+.product-content13,
+.product-content14,
+.product-content15,
+.product-content16,
+.product-content17,
+.product-content18,
+.product-content19,
+.product-content20 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.product-content1 button,
+.product-content2 button,
+.product-content3 button,
+.product-content4 button,
+.product-content5 button,
+.product-content6 button,
+.product-content7 button,
+.product-content8 button,
+.product-content9 button,
+.product-content10 button,
+.product-content11 button,
+.product-content12 button,
+.product-content13 button,
+.product-content14 button,
+.product-content15 button,
+.product-content16 button,
+.product-content17 button,
+.product-content18 button,
+.product-content19 button,
+.product-content20 button {
+  align-self: center;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+
+  header {
+    height: 7rem; 
+  }
+
+  .products-heading {
+    height: 6.5rem;
+  }
+  .products-heading h2 {
+    font-size: 45px;
+  }
+
+  .products-heading p {
+    font-size: 25px;
+  }
+
+  .products {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .products {
+    width: 100%;
+    max-width: 1280px;
+    gap: 1rem;
+    margin-top :1rem;
+    margin-bottom: 1rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+  }
+
+}
+
+@media (min-width: 1300px) {
+  .products {
+    width: 100%;
+    gap: 1.5rem;
+    max-width: 1500px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+  }
+}
