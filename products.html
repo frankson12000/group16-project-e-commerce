@@ -8,190 +8,279 @@
     <link rel="stylesheet" href="./css/products.css">
   <!---Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Lato&family=Monoton" rel="stylesheet">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
 </head>
 
 <body>
   <header>
-    <nav>
+        <nav class="navbar">
+            <div class="logo">
+                <span>P&P</span>
+                <span>Peer'n'Peer Electronics</span>
+            </div>
+            <!-- Desktop navlinks -->
+            <ul class="desktop-navlinks"> 
+                <li> <a href="./index.html">Home</a> </li>
+                <li> <a href="./about.html">About</a> </li>
+                <li> <a href="./products.html">Products</a> </li>
+                <li> <a href="./contact.html">Contact</a> </li>
+            </ul>
+            <!-- Mobile and Tablets -->
+            <div class="mobile">
+                <button class="menu-icon" id="menu-icon">
+                    <span class="material-symbols-outlined dehaze">dehaze</span>
+                    <span class="material-symbols-outlined close">close</span>
+                </button>
+                <ul class="mobile-navlinks" id="menu">
 
-    </nav>
-  </header>
+                    <li> <a href="./index.html">Home</a> </li>
+                    <li> <a href="./about.html">About</a> </li>
+                    <li> <a href="./products.html">Products</a> </li>
+                    <li> <a href="./contact.html">Contact</a> </li>
+                    
+                </ul>
 
-<main>
-  <section id="products.html">
-    <div class="products-heading">
-      <h2>All Products</h2>
-      <p>We got what you are searching for.</p>
+            </div>
 
-      <div class="products-search">
-  
-      <label for="category-search">Category search </label>
-        <select id="category-search" class="select1">
-            <option value="">Select</option>
-            <option value="school-gadget">School Gadget</option>
-            <option value="security-gadget">Security Gadget</option>
-            <option value="home-gadget">Home Gadget</option>
-          </select>
-            
-      <label for="price-range-filter">Price range filter</label>
-        <select id="price-range-filter" class="select2">
-            <option value="">Select</option>
-            <option value="low-price">$50-$150</option>
-            <option value="med-price">$151-$299</option>
-            <option value="max-price">$300-$700</option>
+        </nav>
+    </header>
+
+  <main>
+    <section id="products.html">
+      <div class="products-heading">
+        <div class="heading-content">
+          <h2>All Products</h2>
+          <p>We got what you are searching for.</p>
+        </div>
+
+        <div class="products-search"> 
+          <div class="category-container">
+            <label for="category-search">Category search </label>
+              <select id="category-search" class="select1">
+                  <option value="">Select</option>
+                  <option value="school-gadget">School Gadget</option>
+                  <option value="security-gadget">Security Gadget</option>
+                  <option value="home-gadget">Home Gadget</option>
+                </select>
+          </div>
+          <div class="price-container">
+            <label for="price-range-filter">Price range filter</label>
+            <select id="price-range-filter" class="select2">
+                  <option value="">Select</option>
+                  <option value="low-price">$50-$150</option>
+                  <option value="med-price">$151-$299</option>
+                  <option value="max-price">$300-$700</option>
             </select>
-    </div>
-    </div>
-     
-    <div class="products">
-
-      <div class="product-content1">
-        <img src="./image/image-1.jpg" alt="Wrist-watch-heart-monitor">
-        <h3>Heart Monitor wristwatch</h3>
-        <p>$150</p>
-        <button>Add to Cart</button>
+          </div>
+        </div>
       </div>
+      
+      <div class="products">
 
-      <div class="product-content2">
-        <img src="./image/image-2.jpg" alt="mobile-hands-on wrist-watch">
-        <h3>Mobile hands-on wristwatch</h3>
-        <p>$100</p>
-        <button>Add to Cart</button>
-      </div>
+        <div class="product-content1">
+          <img src="./images/image-1.jpg" alt="Wrist-watch-heart-monitor">
+          <h3>Heart Monitor wristwatch</h3>
+          <p>$150</p>
+          <button>Add to Cart</button>
+        </div>
 
-      <div class="product-content3">
-        <img src="./image/image-3.jpg" alt="classic-heart-monitor-wrist-watch">
-        <h3>Heart Monitor wristwatch3</h3>
-        <p>$170</p>
-        <button>Add to Cart</button>
-      </div>
+        <div class="product-content2">
+          <img src="./images/image-2.jpg" alt="mobile-hands-on wrist-watch">
+          <h3>Mobile hands-on wristwatch</h3>
+          <p>$100</p>
+          <button>Add to Cart</button>
+        </div>
 
-      <div class="product-content4">
-        <img src="./image/image-4.jpg" alt="hand-hair-drier">
-        <h3>Hand Hair drier</h3>
-        <p>$130</p>
-        <button>Add to Cart</button>
-      </div>
+        <div class="product-content3">
+          <img src="./images/image-3.jpg" alt="classic-heart-monitor-wrist-watch">
+          <h3>Heart Monitor wristwatch3</h3>
+          <p>$170</p>
+          <button>Add to Cart</button>
+        </div>
 
-      <div class="product-content5">
-        <img src="image/image-5.jpg" alt="heart-monitor-wrist-watch2">
-        <h3>Heart monitor wristwatch2</h3>
-        <p>$180</p>
-        <button> Add to Cart</button>
-      </div>
+        <div class="product-content4">
+          <img src="./images/image-4.jpg" alt="hand-hair-drier">
+          <h3>Hand Hair drier</h3>
+          <p>$130</p>
+          <button>Add to Cart</button>
+        </div>
 
-      <div class="product-content6">
-       <img src="./image/image-6.jpg" alt="indoor-cctv-camera">
-       <h3>Indoor Cctv camera</h3>
-       <p>$50</p>
-       <button>Add to Cart</button>
-      </div>
+        <div class="product-content5">
+          <img src="images/image-5.jpg" alt="heart-monitor-wrist-watch2">
+          <h3>Heart monitor wristwatch2</h3>
+          <p>$180</p>
+          <button> Add to Cart</button>
+        </div>
 
-      <div class="product-content7">
-        <img src="./image/image-7.jpg" alt="motion-vission-sensor">
-        <h3>Motion vission sensor</h3>
-        <p>$30</p>
+        <div class="product-content6">
+        <img src="./images/image-6.jpg" alt="indoor-cctv-camera">
+        <h3>Indoor Cctv camera</h3>
+        <p>$50</p>
         <button>Add to Cart</button>
         </div>
 
-      <div class="product-content8">
-        <img src="./image/image-8.jpg" alt="wireless-ear-pod">
-        <h3>Wireless ear pod</h3>
-        <p>$45</p>
-        <button>Add to Cart</button>
+        <div class="product-content7">
+          <img src="./images/image-7.jpg" alt="motion-vission-sensor">
+          <h3>Motion vission sensor</h3>
+          <p>$30</p>
+          <button>Add to Cart</button>
+          </div>
+
+        <div class="product-content8">
+          <img src="./images/image-8.jpg" alt="wireless-ear-pod">
+          <h3>Wireless ear pod</h3>
+          <p>$45</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product-content9">
+          <img src="./images/image-9.jpg" alt="set-of-tech-gadget">
+          <h3>Set of tech gadget</h3>
+          <p>$130</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product-content10">
+          <img src="./images/image-10.jpg" alt="monitoring-tech-gadget">
+          <h3>Monitoring tech gadget</h3>
+          <p>$200</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product-content11">
+          <img src="./images/image-11.jpg" alt="out-door-cctv-device">
+          <h3>Out door cctv device</h3>
+          <p>$70</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product-content12">
+          <img src="./images/image-12.jpg" alt="sob-lens-camera">
+          <h3>Sob lens camera</h3>
+          <p>$100</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product-content13">
+          <img src="./images/image-13.jpg" alt="set-of-laptop-notepad">
+          <h3>Set of laptop with notepad</h3>
+          <p>$550</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product-content14">
+          <img src="./images/image-14.jpg" alt="set-desktop-notepad">
+          <h3>Set of desktop and notepad</h3>
+          <p>$350</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product-content15">
+          <img src="./images/image-15.jpg" alt="apple-handset">
+          <h3>Apple handset</h3>
+          <p>$650</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product-content16">
+          <img src="./images/image-16.jpg" alt="bodyworn-walkie-talker">
+          <h3>Bodyworn walkie talker
+          </h3>
+          <p>$250</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product-content17">
+          <img src="./images/image-17.jpg" alt="bodyworn-walkie-talker">
+          <h3>Bodyworn walkie talker</h3>
+          <p>$200</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product-content18">
+          <img src="./images/image-18.jpg" alt="kd-laptop">
+          <h3>KD laptop</h3>
+          <p>$450</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product-content19">
+          <img src="./images/image-19.jpg" alt="mp-mp4-player">
+          <h3>Mp3/Mp4 player</h3>
+          <p>$250</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product-content20">
+          <img src="./images/image-20.jpg" alt="hand-drilling-machine">
+          <h3>Hand-drilling machine</h3>
+          <p>$250</p>
+          <button>Add to Cart</button>
+        </div>
+
       </div>
 
-      <div class="product-content9">
-        <img src="./image/image-9.jpg" alt="set-of-tech-gadget">
-        <h3>Set of tech gadget</h3>
-        <p>$130</p>
-        <button>Add to Cart</button>
-      </div>
+      </section>
+  </main>
 
-      <div class="product-content10">
-        <img src="./image/image-10.jpg" alt="monitoring-tech-gadget">
-        <h3>Monitoring tech gadget</h3>
-        <p>$200</p>
-        <button>Add to Cart</button>
-      </div>
+  <footer class="site-footer">
+        <div class="footer-container">
 
-      <div class="product-content11">
-        <img src="./image/image-11.jpg" alt="out-door-cctv-device">
-        <h3>Out door cctv device</h3>
-        <p>$70</p>
-        <button>Add to Cart</button>
-      </div>
+            <div class="footer-intro">
+                <h4>Peer'n'Peer Electronics</h4>
+                <p>Powering your digital life with the latest tech at unbeatable prices</p>
+            </div>
 
-      <div class="product-content12">
-        <img src="./image/image-12.jpg" alt="sob-lens-camera">
-        <h3>Sob lens camera</h3>
-        <p>$100</p>
-        <button>Add to Cart</button>
-      </div>
+            <div class="footer-body">
+                <div class="footer-quicklinks">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li> <a href="#featured-products">Featured Products</a> </li>
+                        <li> <a href="#product categories">Product Categories</a> </li>
+                        <li> <a href="#about">About</a> </li>
+                        <li> <a href="#contact">Contact</a> </li>
+                        <li> <a href="#faq">FAQ</a> </li>
+                    </ul>
+                </div>
 
-      <div class="product-content13">
-        <img src="./image/image-13.jpg" alt="set-of-laptop-notepad">
-        <h3>Set of laptop with notepad</h3>
-        <p>$550</p>
-        <button>Add to Cart</button>
-      </div>
+                <div class="footer-socials">
+                    <h4>Our Socials</h4>
 
-      <div class="product-content14">
-        <img src="./image/image-14.jpg" alt="set-desktop-notepad">
-        <h3>Set of desktop and notepad</h3>
-        <p>$350</p>
-        <button>Add to Cart</button>
-      </div>
+                    <a href="#" aria-label="X (formerly twitter)" title="Follow us on X">
+                        <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                    </a> 
 
-      <div class="product-content15">
-        <img src="./image/image-15.jpg" alt="apple-handset">
-        <h3>Apple handset</h3>
-        <p>$650</p>
-        <button>Add to Cart</button>
-      </div>
+                    <a href="#" aria-label="Facebook" title="Connect with us on Facebook">
+                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                    </a> 
 
-      <div class="product-content16">
-        <img src="./image/image-16.jpg" alt="bodyworn-walkie-talker">
-        <h3>Bodyworn walkie talker
-        </h3>
-        <p>$250</p>
-        <button>Add to Cart</button>
-      </div>
+                    <a href="#" aria-label="LinkedIn" title="Connect with us on LinkedIn">
+                        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    
+                    <a href="#" aria-label="Instagram" title="Follow us on Instagram">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    </a> 
+                    
+                </div>
 
-      <div class="product-content17">
-        <img src="./image/image-17.jpg" alt="bodyworn-walkie-talker">
-        <h3>Bodyworn walkie talker</h3>
-        <p>$200</p>
-        <button>Add to Cart</button>
-      </div>
+            </div>
 
-      <div class="product-content18">
-        <img src="./image/image-18.jpg" alt="kd-laptop">
-        <h3>KD laptop</h3>
-        <p>$450</p>
-        <button>Add to Cart</button>
-      </div>
+            <div class="footer-foot">
+                <p>2026 &copy; Peer'n'Peer Electronics. All Rights Reserved.</p>
+                <a href="#"> Back To Top</a>
+            </div>
+            
+        </div>
 
-      <div class="product-content19">
-        <img src="./image/image-19.jpg" alt="mp-mp4-player">
-        <h3>Mp3/Mp4 player</h3>
-        <p>$250</p>
-        <button>Add to Cart</button>
-      </div>
+  </footer>
 
-      <div class="product-content20">
-        <img src="./image/image-20.jpg" alt="hand-drilling-machine">
-        <h3>Hand-drilling machine</h3>
-        <p>$250</p>
-        <button>Add to Cart</button>
-      </div>
-
-    </div>
-
-    </section>
-</main>
-    
+  <script src="./main.js"></script>
 </body>
 </html>
